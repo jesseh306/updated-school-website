@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Categories</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+        .navbar {
+            display: flex;
+            background-color: #f0f0f0;
+            padding: 10px;
+            justify-content: center;
+            gap: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar button {
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .navbar button:hover {
+            background-color: #0056b3;
+        }
+        .fields-container {
+            display: none;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .field-box {
+            width: 180px;
+            height: 120px;
+            background-color: #e6e6e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+        .subfields-container {
+            display: none;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .subfield {
+            padding: 10px 15px;
+            background-color: #d1ecf1;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+    </style>
+    <script>
+        // script contents truncated for brevity
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="showFields('STEM')">STEM</button>
+        <button onclick="showFields('Humanities')">Humanities</button>
+        <button onclick="showFields('Medicine')">Medicine</button>
+        <button onclick="showFields('Arts')">Arts</button>
+        <button onclick="showFields('Business')">Business</button>
+    </div>
+    <div id="fields" class="fields-container"></div>
+    <div id="subfields" class="subfields-container"></div>
+</body>
+</html>
